@@ -1,0 +1,40 @@
+@use 'CalculatorWrapper';
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+%screen-bg {
+  width: 100%;
+  height: 50%;
+  background: CalculatorWrapper.$primary-color;
+  color: #fff;
+  text-align: right;
+}
+.calc-screen {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.history-display {
+  @extend %screen-bg;
+  font-size: 22px;
+}
+.screen-input {
+  @extend %screen-bg;
+  border: none;
+  @include placeholder {
+    color: #fff;
+  }
+}

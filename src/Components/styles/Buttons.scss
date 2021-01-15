@@ -1,0 +1,44 @@
+$gray-buttons: #333333;
+$orange-buttons: #fe9f0a;
+$light-gray-buttons: #a5a5a5;
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.single-buttons-row {
+  display: flex;
+
+  gap: 10px;
+}
+.single-button {
+  padding: 0;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.zero-button {
+  border-radius: 25px;
+  width: 130px;
+  text-align: left;
+  padding-left: 22px;
+}
+
+.number-buttons {
+  background-color: $gray-buttons;
+}
+
+.basic-operations-buttons {
+  background-color: $orange-buttons;
+}
+.light-gray-button {
+  background-color: $light-gray-buttons;
+}
